@@ -1,0 +1,75 @@
+div.container{
+	margin: 0 auto;
+}
+div.slideshow{
+	height:500px;
+	overflow: hidden;
+	position: relative;
+}
+div{
+	/*outline:1px solid red;*/
+}
+img{
+	/*outline: 2px dashed green;*/
+}
+div.slideshow img{
+	display: block;
+	position: absolute;	
+	max-width: 100%;
+	bottom: 0;
+	left: 0;
+}
+div.slideshow img.slides{
+	-webkit-transform:rotate(45deg);
+	-webkit-transform-origin:50.2% 190%;
+	-webkit-transition: all 500ms ease-in-out;
+	opacity:0;
+}
+div.slideshow img.active{
+	-webkit-transform:none;
+	opacity:1;
+	
+}
+div.slideshow img.unactive{
+	-webkit-transform:rotate(-45deg);
+	opacity:0;
+}
+div.slideshow div.prev,
+div.slideshow div.next{
+	background-image: url('images/icons-s937443158c.png');
+	position: absolute;
+	height: 54px;
+	width: 37px;
+	background-repeat: no-repeat;
+	top:290px;
+	opacity:0.6;
+	-webkit-transition: opacity 200ms ease-in-out;
+	cursor: pointer;
+}
+div.slideshow div.next{
+    right:15px;
+    background-position: -3px 0;
+}
+div.slideshow div.prev{
+    left:15px;
+    background-position : 0px -59px;
+}
+div.slideshow div.prev:hover,
+div.slideshow div.next:hover{
+	opacity:1;
+}
+
+ div.top{
+	width: 75px;
+	height: 75px;
+	background-image:url('images/envylabs.png');
+	position: absolute;
+	left: 10px;
+}
+div.top:hover{
+	background-position: 0 -79px;
+
+}
+
+
+
